@@ -1,0 +1,56 @@
+{"id":"refund-01","query":"How many days can enterprise clients request a refund?","expected_document":"refund-policy.md","category":"factual"}
+{"id":"refund-02","query":"What is the standard customer refund period?","expected_document":"refund-policy.md","category":"factual"}
+{"id":"refund-03","query":"Where is refunded money sent?","expected_document":"refund-policy.md","category":"paraphrase"}
+{"id":"refund-04","query":"refund deadline for enterprise accounts","expected_document":"refund-policy.md","category":"keyword"}
+{"id":"refund-05","query":"Can an enterprise buyer get money back after 30 days?","expected_document":"refund-policy.md","category":"reasoning"}
+{"id":"mfa-01","query":"Is MFA mandatory for staff?","expected_document":"security-handbook.md","category":"factual"}
+{"id":"mfa-02","query":"How quickly should a security incident be reported?","expected_document":"security-handbook.md","category":"factual"}
+{"id":"mfa-03","query":"How long do we retain customer exports?","expected_document":"security-handbook.md","category":"factual"}
+{"id":"mfa-04","query":"employee authentication requirement","expected_document":"security-handbook.md","category":"keyword"}
+{"id":"mfa-05","query":"Can I wait until tomorrow to disclose an incident?","expected_document":"security-handbook.md","category":"reasoning"}
+{"id":"leave-01","query":"How much vacation does a full-time employee receive?","expected_document":"leave-policy.md","category":"factual"}
+{"id":"leave-02","query":"What is the parental leave duration?","expected_document":"leave-policy.md","category":"factual"}
+{"id":"leave-03","query":"Who needs to approve time off?","expected_document":"leave-policy.md","category":"factual"}
+{"id":"leave-04","query":"annual leave allowance","expected_document":"leave-policy.md","category":"keyword"}
+{"id":"leave-05","query":"May I take vacation without asking my manager?","expected_document":"leave-policy.md","category":"reasoning"}
+{"id":"travel-01","query":"What cabin can I book for a five-hour flight?","expected_document":"travel-policy.md","category":"reasoning"}
+{"id":"travel-02","query":"What is the maximum reimbursable hotel rate?","expected_document":"travel-policy.md","category":"factual"}
+{"id":"travel-03","query":"When is a receipt required?","expected_document":"travel-policy.md","category":"factual"}
+{"id":"travel-04","query":"economy flight requirement","expected_document":"travel-policy.md","category":"keyword"}
+{"id":"travel-05","query":"Can I expense a 20 dollar purchase without a receipt?","expected_document":"travel-policy.md","category":"reasoning"}
+{"id":"sla-01","query":"What is the response target for a critical incident?","expected_document":"support-sla.md","category":"factual"}
+{"id":"sla-02","query":"How quickly are high-priority tickets answered?","expected_document":"support-sla.md","category":"factual"}
+{"id":"sla-03","query":"What is the standard support response time?","expected_document":"support-sla.md","category":"factual"}
+{"id":"sla-04","query":"critical first response SLA","expected_document":"support-sla.md","category":"keyword"}
+{"id":"sla-05","query":"Would a one-hour critical response meet our target?","expected_document":"support-sla.md","category":"reasoning"}
+{"id":"data-01","query":"What are the four data classifications?","expected_document":"data-classification.md","category":"factual"}
+{"id":"data-02","query":"How must restricted information be protected?","expected_document":"data-classification.md","category":"factual"}
+{"id":"data-03","query":"Does restricted data need encryption while moving?","expected_document":"data-classification.md","category":"reasoning"}
+{"id":"data-04","query":"public internal confidential restricted","expected_document":"data-classification.md","category":"keyword"}
+{"id":"data-05","query":"encryption rules for sensitive records","expected_document":"data-classification.md","category":"paraphrase"}
+{"id":"vendor-01","query":"When does a supplier need a security review?","expected_document":"vendor-policy.md","category":"factual"}
+{"id":"vendor-02","query":"Which contracts require approval from legal?","expected_document":"vendor-policy.md","category":"factual"}
+{"id":"vendor-03","query":"How often are vendor reviews renewed?","expected_document":"vendor-policy.md","category":"factual"}
+{"id":"vendor-04","query":"personal data vendor assessment","expected_document":"vendor-policy.md","category":"keyword"}
+{"id":"vendor-05","query":"Does a 60000 dollar contract need legal review?","expected_document":"vendor-policy.md","category":"reasoning"}
+{"id":"onboard-01","query":"When is security training due for new hires?","expected_document":"onboarding.md","category":"factual"}
+{"id":"onboard-02","query":"When should equipment be requested?","expected_document":"onboarding.md","category":"factual"}
+{"id":"onboard-03","query":"When does benefits enrollment close?","expected_document":"onboarding.md","category":"factual"}
+{"id":"onboard-04","query":"first week new employee training","expected_document":"onboarding.md","category":"keyword"}
+{"id":"onboard-05","query":"Can a new hire enroll in benefits after 45 days?","expected_document":"onboarding.md","category":"reasoning"}
+{"id":"expense-01","query":"When are expense reports due?","expected_document":"expense-policy.md","category":"factual"}
+{"id":"expense-02","query":"What is the daily meal maximum?","expected_document":"expense-policy.md","category":"factual"}
+{"id":"expense-03","query":"Can employees expense alcoholic drinks?","expected_document":"expense-policy.md","category":"factual"}
+{"id":"expense-04","query":"meal reimbursement limit","expected_document":"expense-policy.md","category":"keyword"}
+{"id":"expense-05","query":"Is an 80 dollar dinner fully covered?","expected_document":"expense-policy.md","category":"reasoning"}
+{"id":"dr-01","query":"What is our recovery time objective?","expected_document":"continuity-plan.md","category":"factual"}
+{"id":"dr-02","query":"How frequently do backups execute?","expected_document":"continuity-plan.md","category":"factual"}
+{"id":"dr-03","query":"How often are disaster recovery exercises held?","expected_document":"continuity-plan.md","category":"factual"}
+{"id":"dr-04","query":"business continuity RTO","expected_document":"continuity-plan.md","category":"keyword"}
+{"id":"dr-05","query":"Would a five-hour restoration satisfy the objective?","expected_document":"continuity-plan.md","category":"reasoning"}
+{"id":"negative-01","query":"What color is the CEO's car?","expected_document":null,"category":"irrelevant"}
+{"id":"negative-02","query":"Who won the football match?","expected_document":null,"category":"irrelevant"}
+{"id":"negative-03","query":"What is today's weather?","expected_document":null,"category":"irrelevant"}
+{"id":"negative-04","query":"Give me the cafeteria menu","expected_document":null,"category":"irrelevant"}
+{"id":"negative-05","query":"What is the office Wi-Fi password?","expected_document":null,"category":"irrelevant"}
+
