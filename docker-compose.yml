@@ -1,0 +1,51 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: atlasagent
+      POSTGRES_USER: atlas
+      POSTGRES_PASSWORD: atlas-local
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/01-vector.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U atlas -d atlasagent"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      ATLAS_DATABASE_URL: postgresql+psycopg://atlas:atlas-local@postgres:5432/atlasagent
+      ATLAS_REDIS_URL: redis://redis:6379/0
+      ATLAS_LLM_PROVIDER: ${ATLAS_LLM_PROVIDER:-deterministic}
+      ATLAS_CHAT_MODEL: ${ATLAS_CHAT_MODEL:-gpt-5-mini}
+      ATLAS_EMBEDDING_MODEL: ${ATLAS_EMBEDDING_MODEL:-text-embedding-3-small}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ATLAS_APPROVAL_SECRET: ${ATLAS_APPROVAL_SECRET:-local-compose-secret}
+    ports: ["8000:8000"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  dashboard:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://localhost:8000
+    ports: ["5173:80"]
+    depends_on: [api]
+
+volumes:
+  postgres_data:
+  redis_data:
+
