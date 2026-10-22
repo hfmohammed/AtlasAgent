@@ -1,0 +1,13 @@
+[
+  {"name":"refund-policy.md","metadata":{"department":"support"},"content":"Enterprise customers have a 45-day refund window. Standard customers have a 14-day refund window. Refunds return to the original payment method."},
+  {"name":"security-handbook.md","metadata":{"department":"security"},"content":"All employees must use multi-factor authentication. Security incidents must be reported within one hour. Customer exports are retained for 30 days."},
+  {"name":"leave-policy.md","metadata":{"department":"people"},"content":"Full-time employees receive 20 days of annual leave. Parental leave is 16 weeks. Leave requests require manager approval."},
+  {"name":"travel-policy.md","metadata":{"department":"finance"},"content":"Flights under six hours must be economy class. Hotel reimbursement is capped at 250 dollars per night. Receipts are required above 25 dollars."},
+  {"name":"support-sla.md","metadata":{"department":"support"},"content":"Critical incidents have a 15-minute first-response target. High priority tickets target two hours. Standard tickets target one business day."},
+  {"name":"data-classification.md","metadata":{"department":"security"},"content":"Data is classified as public, internal, confidential, or restricted. Restricted data must be encrypted at rest and in transit."},
+  {"name":"vendor-policy.md","metadata":{"department":"legal"},"content":"Vendors handling personal data require a security review. Contracts above 50000 dollars require legal approval. Reviews renew annually."},
+  {"name":"onboarding.md","metadata":{"department":"people"},"content":"New hires complete security training in their first week. Equipment requests are submitted before the start date. Benefits enrollment closes after 30 days."},
+  {"name":"expense-policy.md","metadata":{"department":"finance"},"content":"Expense reports are due within 10 business days. Meals are capped at 75 dollars per day. Alcohol is not reimbursable."},
+  {"name":"continuity-plan.md","metadata":{"department":"operations"},"content":"The recovery time objective is four hours. Backups run every six hours. Disaster recovery exercises occur twice each year."}
+]
+
